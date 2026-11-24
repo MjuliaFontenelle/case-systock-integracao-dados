@@ -1,0 +1,44 @@
+"tabela","posicao","coluna","tipo_dado","permite_nulo","valor_padrao"
+entradas_mercadoria,1,data_entrada,date,YES,
+entradas_mercadoria,2,ordem_compra,double precision,NO,
+entradas_mercadoria,3,nro_nfe,character varying,NO,
+entradas_mercadoria,4,item,double precision,NO,"0"
+entradas_mercadoria,5,produto_id,character varying,NO,'0'::character varying
+entradas_mercadoria,6,descricao_produto,character varying,YES,
+entradas_mercadoria,7,qtde_recebida,double precision,YES,
+entradas_mercadoria,8,filial_id,integer,YES,
+entradas_mercadoria,9,custo_unitario,numeric,NO,"0"
+fornecedor,1,idfornecedor,character varying,NO,
+fornecedor,2,razao_social,character varying,NO,
+fornecedor,3,idfornecedor_num,bigint,NO,
+pedido_compra,1,pedido_id,double precision,NO,"0"
+pedido_compra,2,data_pedido,date,YES,
+pedido_compra,3,item,double precision,NO,"0"
+pedido_compra,4,produto_id,character varying,NO,'0'::character varying
+pedido_compra,5,descricao_produto,character varying,YES,
+pedido_compra,6,ordem_compra,double precision,NO,"0"
+pedido_compra,7,qtde_pedida,double precision,YES,
+pedido_compra,8,filial_id,integer,YES,
+pedido_compra,9,data_entrega,date,YES,
+pedido_compra,10,qtde_entregue,double precision,NO,"0"
+pedido_compra,11,qtde_pendente,double precision,NO,"0"
+pedido_compra,12,preco_compra,double precision,YES,"0"
+pedido_compra,13,fornecedor_id,integer,YES,"0"
+produtos_filial,1,filial_id,integer,NO,
+produtos_filial,2,idproduto,character varying,NO,
+produtos_filial,3,descricao,character varying,NO,
+produtos_filial,4,estoque,double precision,NO,"0"
+produtos_filial,5,preco_unitario,double precision,NO,"0"
+produtos_filial,6,preco_compra,double precision,NO,"0"
+produtos_filial,7,preco_venda,double precision,NO,"0"
+produtos_filial,8,idfornecedor,character varying,YES,
+produtos_filial,9,idfornecedor_num,bigint,YES,
+venda,1,venda_id,bigint,NO,
+venda,2,data_emissao,date,NO,
+venda,3,horariomov,character varying,NO,'00:00:00'::character varying
+venda,4,produto_id,character varying,NO,''::character varying
+venda,5,qtde_vendida,double precision,YES,
+venda,6,valor_unitario,numeric,NO,"0"
+venda,7,filial_id,bigint,NO,"1"
+venda,8,item,integer,NO,"0"
+venda,9,unidade_medida,character varying,YES,
